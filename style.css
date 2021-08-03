@@ -1,0 +1,132 @@
+body {
+    background-color: lightblue;
+}
+img {
+    width: 50px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+#navdiv {
+    display: flex;
+    justify-content:space-around;
+    background-color:lightgreen;
+    font-family: Helvetica;
+    color: white;
+    padding: 5px;
+    font-size: 22px;
+}
+
+#pol {
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 35%;
+    padding: 10px;
+
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#projectCSS {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#widthP {
+    width: 100px;
+}
+
+#pad {
+    padding: 20px;
+}
+
+#margin {
+    margin: 20px;
+}
+
+#imgN {
+    width: 20px;
+}
+
+#mail {
+    width: 40px;
+}
+
+#infoIMG {
+    width: 150px;
+}
+
+#anchor {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#desc {
+    display: flex;
+
+    font-size: 8px;
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 140px;
+    padding: 10px;
+
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.me {
+    width: 150px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+ 
+.links {
+    color: navy;
+}
+
+.links:hover {
+    background-color: grey;
+    opacity: 0.7;
+}
+.links:active {
+    background-color: navy;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 15px;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info {
+    background-color: lightgreen;
+}
+
+.prog {
+    display: flex;
+    justify-content: space-evenly;
+}
