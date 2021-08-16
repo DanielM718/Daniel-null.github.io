@@ -1,5 +1,5 @@
 // container for post
-let container = document.querySelector('container');
+let container = document.querySelector('#container');
 
 //forms
 let title = document.querySelector('#title');
@@ -18,11 +18,21 @@ database.on('child_added', function(childData) {
     console.log(blogData)
     console.log(blogData.MESSAGE)
 
+    let BlogPost = document.createElement('div')
+    
+    let NameData = document.createElement('p');
+    NameData.innerHTML = blogData.NAME;
+    
+    let TitleData = document.createElement('p');
+    TitleData.innerHTML = blogData.TITLE
+
     let MessageData = document.createElement('p');
     MessageData.innerHTML = blogData.MESSAGE
 
-    container.append(MessageData);
-})
+    BlogPost.append(NameData, TitleData, MessageData);
+
+    container.append(BlogPost)
+});
 
 // pushing data to the database
 submit.onclick = function updateDB(event){
@@ -39,4 +49,4 @@ submit.onclick = function updateDB(event){
     }
 
     database.push(value)
-}
+} 

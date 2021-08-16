@@ -10,15 +10,18 @@
 /* Justin: https://www.w3schools.com/howto/howto_js_sidenav.asp */
 
 #header {
+    
     display: flex;
     align-items: center;
+    justify-content: center;
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
     background-color: #47bf93;
     text-decoration: none;
 }
 
 #header_spacer{
-    margin-right: 300px;
+    margin-right: 57%;
 }
 
 .nav_links ul {
@@ -36,3 +39,29 @@
     text-decoration: none;
     color: black;
 }
+
+@media(max-width: 500px){
+    #header {
+        display: flex;
+        align-items: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bolder;
+        background-color: #47bf93;
+        text-decoration: none;
+    }
+
+    .nav_links ul {
+        display: none;
+        
+    }
+    
+    
+    
+
+}
+
+#container div p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
