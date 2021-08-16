@@ -29,6 +29,14 @@ footer {
     height: 30%;
 }
 
+#header_menu{
+    display: none;
+}
+
+#header_search{
+    display: none;
+}
+
 .nav_links ul {
     display: flex;
     flex-direction: row;
@@ -37,8 +45,8 @@ footer {
 
 .nav_links ul li {
     margin: 20px;
+    margin-left: 20px;
     list-style-type: none;
-    font-size: 25px;
     font-size: 20px;
 }
 
