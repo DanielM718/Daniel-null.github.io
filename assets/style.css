@@ -13,7 +13,6 @@
     
     display: flex;
     align-items: center;
-    justify-content: center;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bolder;
     background-color: #47bf93;
@@ -54,10 +53,6 @@
         display: none;
         
     }
-    
-    
-    
-
 }
 
 #container div p {
