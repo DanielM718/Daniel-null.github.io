@@ -7,10 +7,14 @@
     box-sizing: border-box;
 }
 
+footer {
+    font-size: 10px;
+    font-weight: 100;
+}
 /* Justin: https://www.w3schools.com/howto/howto_js_sidenav.asp */
 
 #header {
-    
+    flex-direction: row;
     display: flex;
     align-items: center;
     font-family: 'Josefin Sans', sans-serif;
@@ -19,12 +23,15 @@
     text-decoration: none;
 }
 
-#header_spacer{
-    margin-right: 57%;
+
+#header_logo{
+    width: 20%;
+    height: 30%;
 }
 
 .nav_links ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -32,7 +39,7 @@
     margin: 20px;
     list-style-type: none;
     font-size: 25px;
-    font-style: normal;
+    font-size: 20px;
 }
 
 .nav_links ul li a {
@@ -42,12 +49,8 @@
 
 @media(max-width: 500px){
     #header {
-        display: flex;
-        align-items: center;
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: bolder;
-        background-color: #47bf93;
-        text-decoration: none;
+        justify-content: center;
+        flex-direction: row;
     }
 
     .nav_links ul {
