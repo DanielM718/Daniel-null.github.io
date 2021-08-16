@@ -1,2 +1,38 @@
 /* "font-family: 'Josefin Sans', sans-serif;" */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Justin: https://www.w3schools.com/howto/howto_js_sidenav.asp */
+
+#header {
+    display: flex;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #47bf93;
+    text-decoration: none;
+}
+
+#header_spacer{
+    margin-right: 300px;
+}
+
+.nav_links ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_links ul li {
+    margin: 20px;
+    list-style-type: none;
+    font-size: 25px;
+}
+
+.nav_links ul li a {
+    text-decoration: none;
+    color: black;
+}
