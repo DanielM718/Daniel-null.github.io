@@ -9,7 +9,7 @@ let name = document.querySelector('#name');
 // post button
 let submit = document.querySelector('#Post');
 
-
+// refrencing database
 let database = firebase.database().ref();
 
 // loading information from the database
@@ -18,25 +18,52 @@ database.on('child_added', function(childData) {
     console.log(blogData)
     console.log(blogData.MESSAGE)
 
-    let BlogPost = document.createElement('div')
+    var postID = childData.key;
+    console.log(postID)
+
+    let anchor = document.createElement('a');
+    anchor.href = './SubWeb/BlogPost/blog.html?id=' + postID;
+    anchor.target = '_blank'
+    anchor.id = postID;
+
+    let BlogPost = document.createElement('div');
     
     let NameData = document.createElement('p');
+    // class name for name data
+    NameData.className = 'BlogName';
     NameData.innerHTML = blogData.NAME;
     
     let TitleData = document.createElement('p');
+    // class name for title data
+    TitleData.className = 'BlogTitle';
     TitleData.innerHTML = blogData.TITLE
 
     let MessageData = document.createElement('p');
+    // class name for message data
+    MessageData.className = 'BlogMessage'
     MessageData.innerHTML = blogData.MESSAGE
 
+
+    // let ids = document.createElement('input');
+    // ids.type = 'hidden';
+    // ids.name = blogData.TITLE;
+    // ids.id = postID;
+
+    // adds all the data into a div      
     BlogPost.append(NameData, TitleData, MessageData);
 
-    container.append(BlogPost)
+    // adds the div to the anchor
+    anchor.append(BlogPost);
+
+    // stores said div in the div container
+    container.append(anchor)
 });
 
 // pushing data to the database
 submit.onclick = function updateDB(event){
     event.preventDefault(); //stop refreshing
+
+    // stores user input and assigns it a value for the databse to use and store
     let titleData = title.value;
     let messageData  = message.value;
     let usernameData = name.value;
