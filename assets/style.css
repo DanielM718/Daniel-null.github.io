@@ -1,5 +1,4 @@
 
-
 /* "font-family: 'brandon-grotesque', sans-serif;" */
 @import url("https://use.typekit.net/tjr1rjp.css");
 
@@ -43,7 +42,6 @@ footer {
 }
 
 /* dropDown Menu */
-
 .dropdown{
     display: none;
     justify-content: space-between;
@@ -97,7 +95,8 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
+        width: 100%;
+
     }
     
     #header_menu{
@@ -129,9 +128,10 @@ footer {
 .create-post {
     display: flex;
     flex-direction: column;
-    margin-left: 33%;
+    justify-content: center;
+    margin: auto;
     height: 250px;
-    width: 100%;
+    width: 300px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding-left: 50px;
@@ -174,16 +174,18 @@ footer {
 }
 
 #container {
-    margin-left: 100px;
+    margin: auto;
 }
 
 
 #container div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: white;
+    margin: auto;
     color: rgb(49, 49, 49);
-    width: 400px;
+    width: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 10px;

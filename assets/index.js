@@ -43,12 +43,6 @@ database.on('child_added', function(childData) {
     MessageData.className = 'BlogMessage'
     MessageData.innerHTML = blogData.MESSAGE
 
-
-    // let ids = document.createElement('input');
-    // ids.type = 'hidden';
-    // ids.name = blogData.TITLE;
-    // ids.id = postID;
-
     // adds all the data into a div      
     BlogPost.append(NameData, TitleData, MessageData);
 
