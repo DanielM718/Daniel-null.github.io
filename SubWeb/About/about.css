@@ -152,6 +152,7 @@ footer {
 #About_State{
     padding: 20px;
     border: black ridge 2px;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: normal;
 }
