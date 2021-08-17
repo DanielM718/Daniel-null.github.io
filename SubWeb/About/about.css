@@ -89,7 +89,6 @@ footer {
 
 @media(max-width: 500px){
     
-    
     #header {
         display: flex;
         justify-content: center;
@@ -123,8 +122,16 @@ footer {
     }
     
     #About_title{
+        font-size:10%;
         margin-top: 20px;
         margin-bottom:20px;
+    }
+    #About_State{
+        padding: 20px;
+        border: black ridge 2px;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: normal;
     }
 }
 
@@ -144,9 +151,10 @@ footer {
 #About_title{
     margin-top: 30px;
     margin-bottom: 30px;
-    font-size: 300%;
+    font-size:50px;
     text-decoration: underline ;
     font-family: 'Montserrat', sans-serif;
+    letter-spacing: normal;
 }
 
 #About_State{
