@@ -5,6 +5,6 @@ let dropdown = document.querySelector(".dropdown")
 
 
 mobile_menu.addEventListener("click",function(){
-    $('#header #content').toggleClass("show")
-    
+    event.preventDefault();
+    dropdown.classList.toggle("show")
 });
