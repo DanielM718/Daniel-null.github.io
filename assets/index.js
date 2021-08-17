@@ -15,11 +15,8 @@ let database = firebase.database().ref();
 // loading information from the database
 database.on('child_added', function(childData) {
     let blogData = childData.val();
-    console.log(blogData)
-    console.log(blogData.MESSAGE)
 
     var postID = childData.key;
-    console.log(postID)
 
     let anchor = document.createElement('a');
     anchor.href = './SubWeb/BlogPost/blog.html?id=' + postID;

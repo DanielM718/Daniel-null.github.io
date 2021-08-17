@@ -44,7 +44,6 @@ footer {
 /* dropDown Menu */
 .dropdown{
     display: none;
-    justify-content: space-between;
     font-size: 25px;
     list-style: none;
     box-shadow: 400px;
@@ -53,14 +52,14 @@ footer {
     left: 0px;
     background: wheat;
     width: 100%;
-    
 }
 
 
 .dropdown.show{
-    display: block;
+    position: absolute;
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #header_search{
@@ -156,9 +155,10 @@ footer {
 }
 
 .create-post button {
-    margin: 10px;
-    margin-left: 90px;
-    margin-right: 90px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 75px;
     padding-top: 5px;
     padding-bottom: 5px;
     border: 2px solid rgb(184, 184, 184);
@@ -183,7 +183,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     background-color: white;
-    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
     color: rgb(49, 49, 49);
     width: auto;
     border-radius: 10px;

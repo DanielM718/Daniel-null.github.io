@@ -1,4 +1,4 @@
-let container = document.querySelector('#container')
+let container = document.querySelector('#post')
 
 const queryString = window.location.search;
 console.log(queryString);
