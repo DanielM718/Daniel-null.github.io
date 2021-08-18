@@ -171,6 +171,7 @@ footer {
         padding: 20px;
         border: black ridge 2px;
         font-size: 15px;
+        font-weight: bold;
         font-family: 'Montserrat', sans-serif;
         letter-spacing: normal;
     }
