@@ -6,6 +6,8 @@ let title = document.querySelector('#title');
 let message = document.querySelector('#message');
 let name = document.querySelector('#name');
 
+const d = new Date();
+
 // post button
 let submit = document.querySelector('#Post');
 
@@ -40,8 +42,12 @@ database.on('child_added', function(childData) {
     MessageData.className = 'BlogMessage'
     MessageData.innerHTML = blogData.MESSAGE
 
+    let TimeData = document.createElement('p')
+    TimeData.className = 'BlogTime';
+    TimeData.innerHTML = blogData.TIME;
+    
     // adds all the data into a div      
-    BlogPost.append(NameData, TitleData, MessageData);
+    BlogPost.append(NameData, TitleData, MessageData, TimeData);
 
     // adds the div to the anchor
     anchor.append(BlogPost);
@@ -58,13 +64,16 @@ submit.onclick = function updateDB(event){
     let titleData = title.value;
     let messageData  = message.value;
     let usernameData = name.value;
+    let timeData = d.getHours() + ':' + d.getMinutes() + "  -  " + d.getFullYear() + "/" + d.getMonth() + "/" + d.getDate();
 
     // Update database here
     let value = {
         TITLE: titleData,
         MESSAGE: messageData,
-        NAME: usernameData
+        NAME: usernameData,
+        TIME: timeData
     }
 
     database.push(value)
 } 
+

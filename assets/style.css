@@ -85,6 +85,12 @@ footer {
 .nav_links ul li a {
     text-decoration: none;
     color: black;
+    scroll-behavior: smooth;
+
+}
+
+#content{
+    min-height: 700px;
 }
 
 @media(max-width: 500px){
@@ -198,6 +204,9 @@ footer {
     margin-bottom: 0.5em;
     margin-top: 0.5em;
     margin-left: 0.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .BlogName {
     margin-top: 25px;    
@@ -212,4 +221,12 @@ footer {
     font-size: 0.75em;
     letter-spacing: 0.125em;
     line-height: 1.65;
+}
+
+.contact {
+    background-color: #47bf93;
+}
+
+html {
+    scroll-behavior: smooth;
 }

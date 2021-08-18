@@ -49,7 +49,7 @@
         <div class="nav_links">
             <ul>
                 <li><a href="./SubWeb/About/About.html">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact_container">Contact</a></li>
             </ul>
         </div>
         <a href="#"><img src="images/search.png" id="header_search"><a>
@@ -57,30 +57,42 @@
     
     <section class="dropdown">
             <a href="./SubWeb/About/About.html">About us</a>
-            <a href="#">Contact</a>
+            <a href="#contact_container">Contact</a>
     </section>
 
-
+<section id = "content">
+    
     <div class="create-post">
         <h3>Post Your Blog</h3>
-        <input type="text" id="title" placeholder="Enter A Title" >
-        <input type="text" id="message" placeholder="Enter Your Message" >
-        <input type="text" id="name" placeholder="Enter A Name" >
+        <input type="text" id="title" placeholder="Enter A Title" required>
+        <input type="text" id="message" placeholder="Enter Your Message" required>
+        <input type="text" id="name" placeholder="Enter A Name" required>
         <button id="Post">Post</button>
     </div>
 
     <div id="container">
-
+        <p id="demo"></p>
     </div>
-
+    
+</section>
     <br>
-    <hr>
+    <hr class="contact">
 
-    <footer>
+
+    <section id="contact_container" class="contact">
+        <div>
+            <h1 id="email">Contact Us</h1>
+            <br>
+            <p>Email: studentfinance23@gmail.com</p>
+            <br>
+            <p>Phone Number: (800) 888 - 8888</p>
+        </div>
+    </section>
+    
+    <footer  class="contact">
         <br>
         <p id="credit">website made by: Daniel, Justin, Elijah</p>
     </footer>
-
 
 </body>
 </html>
