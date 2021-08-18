@@ -87,8 +87,43 @@ footer {
     color: black;
 }
 
+/*About Styling*/
+.About{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 800px;
+}
+
+.About1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+#About_title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    text-decoration: underline ;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: normal;
+}
+
+#About_State{
+    padding: 20px;
+    border: black ridge 2px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: normal;
+}
+
+
+
 @media(max-width: 500px){
-    
+
     #header {
         display: flex;
         justify-content: center;
@@ -121,11 +156,17 @@ footer {
         
     }
     
+
     #About_title{
-        font-size:10px;
-        margin-top: 20px;
-        margin-bottom:20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 30px;
+        text-decoration: underline ;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: normal;
     }
+    
+
     #About_State{
         padding: 20px;
         border: black ridge 2px;
@@ -133,42 +174,45 @@ footer {
         font-family: 'Montserrat', sans-serif;
         letter-spacing: normal;
     }
+
+    .About{
+        flex-wrap: nowrap;
+    }
+
+    .About1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+
 }
 
-.About{
+
+
+.contact { 
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.About1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
+    background: center #47bf93;
+    
 }
 
-#About_title{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size:50px;
-    text-decoration: underline ;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: normal;
+.contact #email{
+    font-family:'Montserrat', sans-serif; 
+    color: white;
 }
 
-#About_State{
-    padding: 20px;
-    border: black ridge 2px;
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: normal;
+.contact p{
+    color: white;
+    font-size: 11.5pt;
 }
 
-.contact {
+.contact_us{
     background-color: #47bf93;
+    color: black;
 }
-
 html {
     scroll-behavior: smooth;
 }

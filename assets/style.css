@@ -127,6 +127,10 @@ footer {
         display: none;
         
     }
+
+    #About_title{
+        font-size: 20px;
+    }
     
 }
 
