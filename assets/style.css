@@ -230,3 +230,8 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
+/* Blog */
+#main_container{
+    min-height: 700px;
+}
