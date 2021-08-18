@@ -227,8 +227,27 @@ footer {
     line-height: 1.65;
 }
 
-.contact {
+.contact { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: center #47bf93;
+    
+}
+
+.contact #email{
+    font-family:'Montserrat', sans-serif; 
+    color: white;
+}
+
+.contact p{
+    color: white;
+    font-size: 11.5pt;
+}
+
+.contact_us{
     background-color: #47bf93;
+    color: black;
 }
 
 html {
