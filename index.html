@@ -60,18 +60,44 @@
             <a href="#contact_container">Contact</a>
     </section>
 
-<section id = "content">
-    
-    <div class="create-post">
-        <h3>Post Your Blog</h3>
-        <input type="text" id="title" placeholder="Enter A Title" required>
-        <input type="text" id="message" placeholder="Enter Your Message" required>
-        <input type="text" id="name" placeholder="Enter A Name" required>
-        <button id="Post">Post</button>
+    <div class="webDesc">
+        <div class="column1">
+            <div class="Desctxt">
+                <h1>Assisting Students in Personal Finance & Pathways to College</h1>
+                <p id="descParag">Provides an environment for students to share information and gain information, tips and experiences regarding to personal finance.</p>    
+            </div>
+            <div class="DescBtns">
+                <button type="button" id="giveAdvicebtn"><a href="#content"><b>Give</b> Advice</a></button>
+                <button type="button" id="getAdvicebtn"><a href="#container"><b>Receive</b> Advice</a></button>
+            </div>
+        </div>
+        <div id="Desc-hero">
+            <img src="./images/hero-image.png" class="responsive"> 
+        </div>
     </div>
 
-    <div id="container">
-        <p id="demo"></p>
+<section id = "content">
+    
+    <div id="createLayout">
+        <div class="headerTxt">
+            <h1>Give Advice</h1>
+        </div>
+        <div class="create-post">
+            <h3>Post Your Advice</h3>
+            <input type="text" id="title" placeholder="Add a Title" required>
+            <textarea id="message" row="4" cols="50" placeholder="Enter Your Advice" required></textarea>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+            <button id="Post">Post</button>
+        </div>
+    </div>
+
+    <div class="student-advice">
+        <div class="headerTxt2">
+            <h1>Student Advice</h1>
+        </div>
+        <div id="container">
+
+        </div>
     </div>
     
 </section>
@@ -91,8 +117,7 @@
     
     <footer  class="contact">
         <br>
-        <br>
-        <p id="credit">website made by: Daniel, Justin, Elijah</p>
+        <p id="credit">website made by: Daniel, Justin, Elijah<br><i>&copy; 2021 | All right reserved StudentFinace</i></p>
     </footer>
 
 </body>
