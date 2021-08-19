@@ -17,6 +17,7 @@
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     margin-top: 50px;
+    min-height: 700px;
 }
 
 #post p{
